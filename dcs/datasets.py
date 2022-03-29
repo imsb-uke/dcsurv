@@ -239,3 +239,11 @@ def _generate_patient_id_index(df, prefix="pat", num_digits=4):
         patient_id=lambda df: [
             f"{prefix}-{idx:0{num_digits}d}" for idx in df.index]
     ).set_index("patient_id")
+
+
+def get_dataset(dataset_name):
+    return {
+        'support': support(),
+        'metabric': metabric(),
+        'flchain': flchain(),
+    }[dataset_name]
