@@ -1,0 +1,3 @@
+DURATION_COL = "event_days"
+EVENT_COL = "has_event"
+LABELS = [DURATION_COL, EVENT_COL]
