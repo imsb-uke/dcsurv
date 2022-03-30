@@ -68,7 +68,7 @@ class DcsModel(KerasRegressor):
                  dropout_rate=0,
                  use_early_stopping=False, early_stopping_patience=0, early_stopping_min_delta=0,
                  validation_size=0,
-                 interpolate_method='pad',
+                 interpolate_method='linear',
                  lambda_=1, sigma=1,
                  loss_normalize=True,
                  loss_kernel_include_censored=True,
