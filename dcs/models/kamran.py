@@ -1,4 +1,4 @@
-from dcs.models import DcsModel
+from dcs.models.dcs_model import DcsModel
 
 
 class Kamran(DcsModel):
