@@ -4,11 +4,11 @@ numpy==1.19.5
 h5py==3.1.0
 tables==3.6.1
 PyYAML==5.4.1
-scikit-learn==0.24.2 # 1.0.2
+scikit-learn==0.24.2
 lifelines==0.25.4
 pycox==0.2.1
-# torch==1.6.0
-scikit-survival==0.16.0 # 0.17.1
+torch==1.6.0
+scikit-survival==0.16.0
 tensorflow==2.5.0
 tensorflow-addons==0.15.0
 tqdm==4.56.0
