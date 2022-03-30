@@ -3,6 +3,14 @@ import pandas as pd
 import numpy as np
 
 
+def unzip_labels(labels_zipped):
+    """
+        reverses zip_labels
+    """
+    res = list(zip(*labels_zipped))
+    return (np.array(res[0]), np.array(res[1]))
+
+
 def interpolate_prediction(df,
                            target_grid,
                            interpolate_method='pad',
