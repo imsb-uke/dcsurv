@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import h5py
 import os
-import defaults
+from dcs import defaults
 
 
 def metabric(split_train_test=False):

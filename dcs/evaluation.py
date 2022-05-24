@@ -94,7 +94,13 @@ def ddc(target, prediction, **d_calibration_kwargs):
     """
 
     def kl_divergence(p, q):
-        return np.sum(np.where(p != 0, p * np.log(p / q), 0))
+
+        idxs = p != 0
+
+        if not np.any(idxs):
+            return np.nan
+        else:
+            return np.sum(p[idxs] * np.log(p[idxs]/q[idxs]))
 
     d_calibration_kwargs.pop('return_b', None)
 
